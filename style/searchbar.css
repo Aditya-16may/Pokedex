@@ -1,0 +1,127 @@
+.Searchbar{
+    background-color: #313131;
+    padding: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    gap: 40px;
+}
+
+#message{
+    background-color: rgb(80, 172, 52);
+    height: fit-content;
+    width: 400px;
+    padding: 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 470px;
+}
+
+#content h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#searchbox{
+    margin-right: 40px;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    padding:0 10px;
+    font-size: 1.05rem;
+    box-shadow: 0px 0px 5px #696868ee;
+}
+
+#Search{
+    background-color: rgb(255, 115, 0);
+    height: 40px;
+    width: 50px;
+    padding: 10px;
+    transform: translateY(40%);
+    border-radius:10px ;
+}
+
+#Search:hover{
+    background-color: rgb(247, 77, 68);
+    cursor: pointer;
+}
+
+#content p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+
+.search-wrapper {
+  position: relative;
+}
+
+.suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgb(248, 207, 130);
+  border: 1px solid rgb(248, 207, 130);
+  border-radius: 6px;
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.suggestions li {
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #313131;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.suggestions li:hover {
+  background-color: #f0f0f0;
+}
+
+.Searchbar {
+  flex-wrap: wrap;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+#content {
+  width: 100%;
+  max-width: 500px;
+}
+
+#searchbox {
+  width: 70%;
+  margin-right: 2rem;
+}
+
+#message {
+  width: 100%;
+  max-width: 500px;
+}
+
+@media (max-width: 600px) {
+  .Gallery h2 {
+    font-size: 1.3rem;
+  }
+
+  .Name {
+    width: 90%;
+  }
+
+  .Intro {
+    width: 100%;
+    margin: 0 0 30px;
+    font-size: 1.1rem;
+  }
+
+  .Error img {
+    height: 250px;
+  }
+}

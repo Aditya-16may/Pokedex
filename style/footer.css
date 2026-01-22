@@ -1,0 +1,42 @@
+#footer-container {
+    height: 180px;
+    background-size: cover;
+    background-image: url("../assets/footer.jpg");
+    background-position: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+#footer-container section{
+    background-color: transparent;
+    position: absolute;
+    padding: 0.2rem;
+    width: fit-content;
+    border: 2px solid bisque;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5 px beige;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section div{
+    background-color: rgba(255, 255, 255, 0.753);
+    border: 2px solid bisque;
+    border-radius: 10px;
+    padding: 1.75rem;
+    width: fit-content;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+@media (max-width: 600px) {
+
+    section div{
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}

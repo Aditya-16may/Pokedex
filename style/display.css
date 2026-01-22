@@ -1,0 +1,165 @@
+
+.background{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../assets/city.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.Main{
+    width: 970px;
+    background-image: url("../assets/leafy.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Gallery{
+    padding: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #313131;
+    gap: 40px;
+    font-size: 1.5rem;
+    width: 970px;
+}
+
+.Gallery p{
+    background-color: #30a7d7;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    align-self: flex-end;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    color: white;
+    transition: all 0.25s ease;
+}
+
+.Gallery p:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px #64bcdf;
+}
+
+#icon{
+    transform: translateY(20%);
+    border-radius:10px ;
+    margin-right:10px ;
+}
+.Error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #313131;
+    gap: 20px;
+    font-size: 1.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    width: fit-content;
+    align-self: center;
+    padding: 10px;
+}
+
+.Error img{
+    height: 400px;
+}
+
+.Message{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    font-size: 1.75rem;
+    font-weight: bolder;
+}
+
+.Message img{
+    height: 35px;
+}
+
+.Board{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-left: 65px;
+    margin-bottom: 40px;
+}
+
+.DetailPage{
+    display:flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Main {
+  width: 100%;
+  max-width: 1100px;
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Gallery {
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.Board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 0 20px 40px;
+}
+
+.DetailPage {
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .Gallery h2 {
+    font-size: 1.3rem;
+  }
+
+  .Name {
+    width: 90%;
+  }
+
+  .Intro {
+    width: 100%;
+    margin: 0 0 30px;
+    font-size: 1.1rem;
+  }
+
+  .Error img {
+    height: 200px;
+  }
+  .Message img{
+    height: 20px;
+  }
+}
